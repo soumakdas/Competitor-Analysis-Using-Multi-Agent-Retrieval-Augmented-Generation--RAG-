@@ -1,0 +1,54 @@
+Description
+The project focuses on automating competitor analysis through a Multi-Agent Retrieval-Augmented Generation (RAG) Collaborative System. Traditional competitor analysis is resource-intensive, requiring significant manual effort to gather, validate, and synthesize information. The proposed system leverages a multi-agent architecture and RAG-based data augmentation to deliver reliable, up-to-date, and context-aware insights. By decomposing the task into sequential steps, each handled by specialized agents, the system ensures that the analysis process is efficient, accurate, and scalable.
+
+Objective
+
+To address these challenges, we propose implementing a multi-agent based Retrieval-Augmented Generation (RAG) system specifically designed for performing competitor analysis.
+
+The system:
+
+Accepts a company name as input.
+
+Retrieves the latest web and industry-specific data.
+
+Compares the company against its key competitors within the relevant sector.
+
+Produces a structured and actionable competitor analysis report
+
+This enables organizations and analysts to make data-driven strategic decisions quickly and effectively.
+Conclusion
+The Multi-Agent RAG Collaborative System offers a scalable and intelligent solution for competitor analysis. By combining sequential agent collaboration with retrieval-augmented insights, it ensures that the final output is timely, comprehensive, and contextually accurate. This approach not only accelerates the analysis process but also minimizes risks of outdated or incomplete data, ultimately empowering businesses with reliable competitive intelligence for strategic advantage.
+Rubric
+Criteria
+Environment Setup
+1. Setting up the Envionment variables and instantiating them as required (5 Marks)
+2. Parameters for OpenAI LLM, Embedding model, ChromaDB vector db are correctly defined and initialized - collection name, persistent client, OpenAI embedding model is correctly configured with the correct API key and base URL.
+Points
+5
+Criteria
+Instantiating the State Definitions
+1. Defining the Pydantic models for structured outputs - 'QuestionSuggestion'that ensures that responses from LLM are in consistent format (3 Marks)
+2. Define the Pydantic model for structured outputs `Competitive State Analysis` that keeps track of competitive analysis. (3 Marks)
+Points
+6
+Criteria
+Setting up the Tools
+1. Set up Tavily search tool for web search (1 Mark)
+2. Set up Suggest Questions Tool (3 Marks)
+3. Set up Fetch Search Result Tool (3 Marks)
+4. Set up Store in ChromaDB Tool (4 Marks)
+5. Set up Generate Report Tool (2 Marks)
+Points
+13
+Criteria
+Setting up the Agents
+1. Set up Agents by first initializing the agents for Questions Generator agent, Data retrieval and storage agent, report drafter agent
+2. Define the nodes for the workflow and instantiate them using the agents defined - Question Generator Node (6 Marks), Data Retrieval and Storage Node (6 Marks), Report Drafter Node (6 Marks)
+Points
+20
+Criteria
+Executing the Workflow
+1. Build the StateGraph workflow using a Sequential Design Pattern (5 Marks)
+2. Execute the workflow by invoking the graph (1 Marks)
+Points
+6
