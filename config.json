@@ -1,0 +1,6 @@
+{
+    "AZURE_OPENAI_KEY": "EcLmh5c7YHDRzQqw5c0IMbGejNsAZa6DdcKw1qNY8n4WmeYtQMZ1JQQJ99BJACYeBjFXJ3w3AAABACOGeTRq",
+    "AZURE_OPENAI_ENDPOINT": "https://soumak-gen-ai-001.openai.azure.com/",
+    "CHATGPT_MODEL": "text-embedding-3-small",
+    "AZURE_OPENAI_APIVERSION": "2024-12-01-preview"
+}
