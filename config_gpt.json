@@ -1,0 +1,7 @@
+{
+    "AZURE_OPENAI_KEY": "CaMkKtaN8DfdaU2JuNH4OakdSsPmougzRc2desGfTsUHeGaxAEMoJQQJ99BJACYeBjFXJ3w3AAABACOGKkSA",
+    "AZURE_OPENAI_ENDPOINT": "https://soumak-gen-ai-001.openai.azure.com/",
+    "CHATGPT_MODEL": "gpt-4o-mini",
+    "AZURE_OPENAI_APIVERSION": "2025-01-01-preview",
+    "TAVILY_API_KEY": "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"
+}
